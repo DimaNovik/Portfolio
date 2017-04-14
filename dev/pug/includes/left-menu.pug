@@ -1,0 +1,10 @@
+a(href='#' id='open-menu') <>
+
+.content-menu#content-menu
+	.foto
+		
+	.menu
+		-var ul_menu = {'About myself':'about.html','Education':'education.html','Skills':'skills.html','Contact':'contact.html'}
+		ul
+			each linkPath, linkName in ul_menu
+				li: a(href=linkPath)=linkName
