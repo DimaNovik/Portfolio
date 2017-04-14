@@ -61,6 +61,10 @@ body {
 	padding: 15px 0 15px 0; 
 }
 
+.menu ul li:hover {
+	background-color: #04B1E1;
+}
+
 .main-content {
 	width: 100%;
 	background-color: #04B1E1;

@@ -9,7 +9,7 @@ link.onclick = function() {
 		link.innerHTML = '';
 		link.innerHTML = "MENU";
 		divMenu.style.width = '20%';
-		divMenu.style.transition='1s';
+		divMenu.style.transition='1s';	
 		allMenu.style.visibility = 'visible';
 	} else {
 		divMenu.style.width = '';
