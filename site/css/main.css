@@ -70,4 +70,19 @@ body {
 	background-color: #04B1E1;
 }
 
+.welcome {
+	margin: 0 10px;
+}
+
+.welcome h2 {
+	font-size: 4.5em;
+	color:#fff;
+	text-transform: uppercase;
+	padding: 23px 0 0 15px;
+}
+
+.welcome span {
+	color:#38003C;
+}
+
 
