@@ -1,0 +1,20 @@
+.all-project {
+	display: flex;
+    flex-flow: row wrap;
+	justify-content: space-between;
+	margin:40px 0 0 15px;
+
+}
+
+.items {
+	background-color: #fff;
+	width: 360px;
+	height: 360px;
+	margin-top: 10px;
+	overflow: hidden;
+}
+
+
+.items:hover {
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
