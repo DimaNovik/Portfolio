@@ -1,0 +1,4 @@
+-var ul_class_menu = {'All':'#','Web-pages':'#','Application':'#','Other':'#'}
+		ul
+			each linkPath, linkName in ul_class_menu
+				li: a(href=linkPath)=linkName
