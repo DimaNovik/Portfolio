@@ -1,6 +1,6 @@
 .left-menu {
 	width: 50px;	
-	
+
 	background-color: #38003C;
 	text-align: center;
 	padding-top: 30px;
@@ -30,7 +30,7 @@
 	background-color:#04B1E1;
 	border-radius: 50%; 
 	margin-top: 50px;
-	background-image: url('../img/photo.jpg');
+	background-image: url('../img/photo.png');
 	overflow: 1;
 }
 

@@ -6,64 +6,11 @@
 		include classification
 	
 	.flip-container
-		.flip
-			.back 
-				.desc
-					h3 "Контрольные обходы. Занесение показаний" 
-					p Веб-приложение для контроля и занесения показаний счетчиков.
-					h3 Используемый стек технологий:			
-			.front
-				img(src='../../img/projects/tablet.png')
-		.flip
-			.back 
-				.desc
-					h3 Официальный сайт "Министерства Юстиции Украины в Одесской области" 
-			.front
-				img(src='../../img/projects/minjust.png' alt='Сайт Министерства Юстиции в Одесской области')
-		.flip
-			.back 
-				.desc
-					h3 Сайт для компании по оформлению виз
-			.front
-				img(src='../../img/projects/vokrugmira.png')
-		.flip
-			.back
-				.desc 
-					h3 Практика в адаптивной-верстке psd-шаблона
-			.front
-				img(src='../../img/projects/realhome.png')
-		.flip
-			.back
-				.desc 
-					h3 Верстка анимированного куба
-			.front
-				img(src='../../img/projects/cube.png')
-		.flip
-			.back 
-				.desc
-					h3 Верстка psd-шаблона на PUGJS
-			.front
-				img(src='../../img/projects/hazy.png')
-		.flip
-			.back 
-				.desc
-					h3 Официальный сайт ПАО "Одессаоблэнерго"
-			.front
-				img(src='../../img/projects/oblenergo.png')
-		.flip
-			.back 
-				.desc
-					
-			.front
-				
-		.flip
-			.back 
-				.desc
-					
-			.front
-		.flip
-			.back 
-				.desc
-					
-			.front
-					
+		-var flip_content = {'Веб-приложение "Контрольные обходы"':'../../img/projects/tablet.png','Официальный сайт "Министерства Юстиции Украины в Одесской области"':'../../img/projects/minjust.png','Сайт для компании по оформлению ВИЗ':'../../img/projects/vokrugmira.png','Практика в адаптивной-верстке psd-шаблона':'../../img/projects/realhome.png','Верстка анимированного куба':'../../img/projects/cube.png','Верстка psd-шаблона на PUGJS':'../../img/projects/hazy.png','Официальный сайт ПАО "Одессаоблэнерго"':'../../img/projects/oblenergo.png'}
+			each flipImg, flipText in flip_content
+				.flip
+					.back 
+						.desc
+							h3=flipText		
+					.front
+						img(src=flipImg)

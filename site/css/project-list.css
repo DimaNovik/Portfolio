@@ -57,7 +57,6 @@
 	-webkit-transform: perspective( 600px ) rotateY( 0deg );
 	transform: perspective( 600px ) rotateY( 0deg );
 	cursor: pointer;
-
 	animation: UpCard 3s ease-in-out infinite;
 }
 
