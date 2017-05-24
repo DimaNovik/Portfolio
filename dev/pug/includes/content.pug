@@ -1,16 +1,22 @@
 .welcome
-	h2 Welcome to my <span>site-portfolio</span>
-	h2 My name is <span>Dmitriy</span> and I`m <span>FULL-STACK Dev</span>
+	p(class='tag-html')
+	p(class='tag-body')
+	h2 Hi, 
+	h2 I`m <span class='d-color'>D</span>mitriy, 
+	h2 web developer.
 
-	.classification
-		include classification
-	
-	.flip-container
-		-var flip_content = {'Веб-приложение "Контрольные обходы"':'../../img/projects/tablet.png','Практика в адаптивной-верстке psd-шаблона':'../../img/projects/realhome.png','Игра на REACT':'../../img/projects/fastfood.png','Верстка анимированного куба':'../../img/projects/cube.png','Верстка psd-шаблона на PUGJS':'../../img/projects/hazy.png','Официальный сайт "Министерства Юстиции Украины в Одесской области"':'../../img/projects/minjust.png','Сайт для компании по оформлению ВИЗ':'../../img/projects/vokrugmira.png','Официальный сайт ПАО "Одессаоблэнерго"':'../../img/projects/oblenergo.png'}
-			each flipImg, flipText in flip_content
-				.flip
-					.back 
-						.desc
-							h3=flipText		
-					.front
-						img(src=flipImg)
+	p Front-end developer / Web developer 
+
+	p 
+		button Contact me
+
+.logo-svg
+	svg(width="100%" height="948px"  class="svg-line")
+		line(x1="50" y1="-30" x2="660" y2="1110" stroke="white" stroke-width="100")
+		line(x1="250" y1="-30" x2="860" y2="1110" stroke="white" stroke-width="100")
+		line(x1="450" y1="-30" x2="1060" y2="1110" stroke="white" stroke-width="100")
+		
+    	
+
+
+		

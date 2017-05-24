@@ -1,10 +1,31 @@
-a(href='#' id='open-menu') <>
+.logo
+	p
+		a(href='#')<span class="d-color">D</span><span class="n-color">N</span>
+	p Web
 
-.content-menu#content-menu
-	.foto
-		
-	.menu
-		-var ul_menu = {'About myself':'about.html','Education':'education.html','Skills':'skills.html','Contact':'contact.html'}
-		ul
-			each linkPath, linkName in ul_menu
-				li: a(href=linkPath)=linkName
+.icon-menu
+	ul
+		li 
+			a(href='#')
+				img(src='img/icon/home.png')
+		li 
+			a(href='#')
+				img(src='img/icon/skills.png')
+		li
+			a(href='#')
+				img(src='img/icon/projects.png')
+		li 
+			a(href='#')
+				img(src='img/icon/other.png')
+
+.icon-social
+	ul
+		li
+			a(href='#')
+				img(src='img/icon/insta.png')
+		li
+			a(href='#')
+				img(src='img/icon/fb.png')
+		li
+			a(href='#')
+				img(src='img/icon/github.png')

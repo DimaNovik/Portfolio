@@ -4,20 +4,57 @@
 /*SECTION-CONTENT*/
 .main-content {
 	width: 100%;
-	background-color: #04B1E1;
+	background-color: #444444;
+	display: flex;
+	justify-content: space-between;
+}
+
+.tag-body:before {
+	color:#fff;
+	content: ".";
 }
 
 .welcome {
-	margin: 0 10px;
+	align-self: center;
+	padding-left:50px;
 }
 
 .welcome h2 {
-	font-size: 4.5em;
+	text-align: left;
+	font-family: "Helvetica", sans-serif;
+	font-size: 6.5em;
 	color:#fff;
-	text-transform: uppercase;
-	padding: 23px 0 0 15px;
+
 }
 
-.welcome span {
-	color:#38003C;
+.welcome p {
+	font-size: 1.5em;
+	color:#fff;
+	text-align: center;
+	margin: 45px 0; 
 }
+
+.welcome button {
+	text-transform: uppercase;
+	color:#08FDD8;
+	background-color: transparent;
+	width: 150px;
+	height: 50px;
+	border: 1px solid #08FDD8;
+}
+
+.welcome button:hover, active {
+	color:#FC0853;
+	border: 1px dashed #FC0853;
+
+}
+
+.logo-svg {
+	width:60%;
+}
+
+.svg-line {
+	opacity: 0.2;
+}
+
+
