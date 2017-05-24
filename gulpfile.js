@@ -24,6 +24,7 @@ gulp.task('templates', function() {
         .pipe(plumber())
         .pipe(pug())
         .pipe(gulp.dest('./site/'))
+        .pipe(gulp.dest('./docs/'))
         .pipe(connect.reload());
 });
 
@@ -33,18 +34,21 @@ var copy = require('gulp-copy');
 gulp.task('copy', function () {
   gulp.src('./dev/css/*.*')
     .pipe(gulp.dest('./site/css'))
+    .pipe(gulp.dest('./docs/css'))
     .pipe(connect.reload());
 });
 
 gulp.task('copy-images', function () {
   gulp.src('./dev/img/**/*.*')
     .pipe(gulp.dest('./site/img'))
+    .pipe(gulp.dest('./docs/img'))
     .pipe(connect.reload());
 });
 
 gulp.task('copy-js', function () {
   gulp.src('./dev/js/*.*')
     .pipe(gulp.dest('./site/js'))
+    .pipe(gulp.dest('./docs/js'))
     .pipe(connect.reload());
 });
 
