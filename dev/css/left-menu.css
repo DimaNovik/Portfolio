@@ -43,8 +43,13 @@
 }
 
 .icon-menu ul li:hover {
+	transition: 1s;
 	background-color: #08FDD8;
 	cursor: pointer;
+}
+
+.icon-menu ul li a {
+	display: block;
 }
 
 .icon-social ul li {
@@ -52,6 +57,11 @@
 }
 
 .icon-social ul li:hover {
+	transition: 1s;
 	background-color: #08FDD8;
 	cursor: pointer;
+}
+
+.icon-social ul li a {
+	display: block;
 }

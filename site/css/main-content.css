@@ -4,14 +4,10 @@
 /*SECTION-CONTENT*/
 .main-content {
 	width: 100%;
-	background-color: #444444;
-	
+	background-color: #444444;	
 }
 
-.tag-body:before {
-	color:#fff;
-	content: ".";
-}
+/* Style for WELCOME-PAGE*/
 
 #welcome-page {
 	display: flex;
@@ -28,7 +24,6 @@
 	font-family: "Helvetica", sans-serif;
 	font-size: 6.5em;
 	color:#fff;
-
 }
 
 .welcome p {
@@ -61,22 +56,87 @@
 	opacity: 0.2;
 }
 
+/* Style for SKILLS-PAGE*/
 #skills-page {
 	display: none;
-	background-color: yellow;
 	height: 100vh;
+	justify-content: space-between;
+
 }
 
+.about-skills {
+	align-self: center;
+	text-align: center;
+	width: 50%;
+}
+
+.about-skills h2 {
+	font-family: "Helvetica", sans-serif;
+	font-size: 6.5em;
+	color:#08FDD8;
+}
+
+.about-me {
+	align-self: center;
+	width: 50%;	
+}
+
+.my-photo {
+	width: 180px;
+	height: 180px;
+	border-radius:180px;
+	overflow: hidden;
+	margin:0 auto;
+}
+
+.my-photo img {
+	opacity: 0.8;
+}
+
+.my-photo img:hover {
+	opacity: 1;
+	transition: 1s;
+}
+
+
+/* Style for PROJECT-PAGE*/
 #project-page {
 	display: none;
-	background-color:red;
 	height: 100vh;
+	justify-content: space-between;
 }
 
+.project-title {
+	align-self: center;
+	text-align: center;
+	width: 50%;
+}
+
+.project-title h2 {
+	font-family: "Helvetica", sans-serif;
+	font-size: 6.5em;
+	color:#08FDD8;
+}
+
+
+
+/* Style for OTHER-PAGE*/
 #other-page {
 	display: none;
-	background-color:green;
 	height: 100vh;
+	justify-content: space-between;
+}
+
+.other-title {
+	align-self: center;
+	text-align: center;
+	width: 50%;
+}
+
+.other-title h2 {
+	font-family: "Helvetica", sans-serif;
+	font-size: 6.5em;
+	color:#08FDD8;
 }
 
 
