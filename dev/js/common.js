@@ -1,7 +1,6 @@
 function ChangePages(pages) {
 	let getPage = pages,
-		main = document.getElementById('main-content').children,
-		ololo;
+		main = document.getElementById('main-content').children;
 
 	for (let i=0; i<main.length; i++) {
 
@@ -11,9 +10,6 @@ function ChangePages(pages) {
 			main[i].style.display = "flex";
 		} else {
 			main[i].style.display = "none";
-		}
-
-		
+		}	
 	}
-
 }
