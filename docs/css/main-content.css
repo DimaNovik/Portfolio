@@ -16,7 +16,7 @@
 
 .welcome {
 	align-self: center;
-	padding-left:50px;
+	padding-left:30px;
 }
 
 .welcome h2 {
@@ -66,14 +66,21 @@
 
 .about-skills {
 	align-self: center;
-	text-align: center;
+	padding-left: 30px;
 	width: 50%;
 }
 
 .about-skills h2 {
 	font-family: "Helvetica", sans-serif;
 	font-size: 6.5em;
-	color:#08FDD8;
+	color:#fff;
+}
+
+.about-skills p {
+	font-family:"Helvetica", sans-serif;
+	font-size: 1.5em;
+	color:#fff;
+	margin: 25px 0;
 }
 
 .about-me {
@@ -115,10 +122,8 @@
 .project-title h2 {
 	font-family: "Helvetica", sans-serif;
 	font-size: 6.5em;
-	color:#08FDD8;
+	color:#fff;
 }
-
-
 
 /* Style for OTHER-PAGE*/
 #other-page {
@@ -136,7 +141,7 @@
 .other-title h2 {
 	font-family: "Helvetica", sans-serif;
 	font-size: 6.5em;
-	color:#08FDD8;
+	color:#fff;
 }
 
 
