@@ -67,4 +67,17 @@
 	height: 100vh;
 }
 
+#project-page {
+	display: none;
+	background-color:red;
+	height: 100vh;
+}
+
+#other-page {
+	display: none;
+	background-color:green;
+	height: 100vh;
+}
+
+
 
