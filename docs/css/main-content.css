@@ -5,13 +5,17 @@
 .main-content {
 	width: 100%;
 	background-color: #444444;
-	display: flex;
-	justify-content: space-between;
+	
 }
 
 .tag-body:before {
 	color:#fff;
 	content: ".";
+}
+
+#welcome-page {
+	display: flex;
+	justify-content: space-between;
 }
 
 .welcome {
@@ -55,6 +59,12 @@
 
 .svg-line {
 	opacity: 0.2;
+}
+
+#skills-page {
+	display: none;
+	background-color: yellow;
+	height: 100vh;
 }
 
 
