@@ -7,7 +7,7 @@ var connect = require('gulp-connect-multi')();
 gulp.task('connect', connect.server({
     host: '127.0.0.1',
     root: ['site'],
-    port: 9090,
+    port: 8080,
     livereload: true,
     open: {
         browser: 'chrome'

@@ -80,9 +80,6 @@
 	margin: 25px 0;
 }
 
-
-
-
 .time-line {
 	width: 100%;
 	display: flex;
@@ -108,42 +105,47 @@
 .block-time-lines {
 	position: absolute;
 	z-index: 1;
-	width:45%;
+	width:47%;
 	height: 100px;
 	margin-top: 40px;
 }
 
 .time-line-1 {
-	width: 90%;
+	width: 0%;
 	border-bottom: 3px solid #08FDD8; 
+	animation:linemove-1 1s linear forwards;
 }
 
 .time-line-2 {
 	margin-top: 15px;
-	width: 70%;
+	width: 0%;
 	margin-left: 20%;
 	border-bottom: 3px solid #3041fc; 
+	animation:linemove-2 1s linear forwards;
 }
 
 .time-line-3 {
 	margin-top: 15px;
-	width: 10%;
+	width: 0%;
 	margin-left: 80%;
 	border-bottom: 3px solid green; 
+	animation:linemove-3 1s linear forwards;
 }
 
 .time-line-4 {
 	margin-top: 15px;
-	width: 10%;
+	width: 0%;
 	margin-left: 75%;
 	border-bottom: 3px solid #FC0853; 
+	animation:linemove-4 1s linear forwards;
 }
 
 .time-line-5 {
 	margin-top: 15px;
-	width: 10%;
+	width: 0%;
 	margin-left: 80%;
 	border-bottom: 3px solid yellow; 
+	animation:linemove-5 1s linear forwards;
 }
 
 .time-desc {
@@ -202,6 +204,34 @@
 	opacity: 1;
 	transition: 1s;
 }
+
+
+.education p {
+	font-size: 1.6em;
+	color:#fff;
+	margin: 45px 0;
+}
+
+.education img {
+	float:left;
+	margin:0 25px;
+}
+
+.educ-item-1 {
+	opacity: 0;
+	animation:showEducItem 1s linear forwards;
+}
+
+.educ-item-2 {
+	opacity: 0;
+	animation:showEducItem 1s linear 1s forwards;
+}
+
+.educ-item-3 {
+	opacity: 0;
+	animation:showEducItem 1s linear 2s forwards;
+}
+
 
 
 /* Style for PROJECT-PAGE*/
