@@ -33,8 +33,10 @@
 	margin: 45px 0; 
 }
 
-.welcome button {
+.button {
+	padding: 20px 30px;
 	text-transform: uppercase;
+	text-decoration: none;
 	color:#08FDD8;
 	background-color: transparent;
 	width: 150px;
@@ -42,7 +44,7 @@
 	border: 1px solid #08FDD8;
 }
 
-.welcome button:hover, active {
+.button:hover, active {
 	color:#FC0853;
 	border: 1px dashed #FC0853;
 
@@ -60,10 +62,65 @@
 	animation: moveMainLines 1s linear forwards ;
 }
 
-.svg-line-1 {
-
+.overlay {
+	position: fixed;
+	margin: 0 auto;
+	background-color: #333;
+	transition: opacity 500ms;
+	visibility: hidden;
+	opacity: 0;
+	width: 100%;
+	height: 100vh;
 }
 
+.overlay:target {
+	visibility: visible;
+	opacity: 0.9;
+}
+
+.popup {
+	padding:20px;
+	background-color: #fff;
+	width: 60%;
+	left:10%;
+	margin-top:5%; 
+	margin-bottom:5%; 
+	position: absolute;
+	transition: all 3s ease-in-out;
+}
+
+.popup h2 {
+	font-size: 1.8em;
+}
+
+.popup .close {
+	position: absolute;
+	top:20px;
+	right: 30px;
+	transition: all 200ms;
+	font-size: 3em;
+	font-weight: bold;
+	text-decoration: none;
+	color:#333;
+}
+
+.popup .close:hover {
+	color: #08FDD8;
+}
+
+.content {
+	display: flex-wrap;
+	justify-content: space-around;
+} 
+
+.content-map img {
+	width: 80%;
+}
+
+.content p {
+	margin: 15px 0;
+	font-size: 1.4em;
+}
 
 /* Style for SKILLS-PAGE*/
 #skills-page {
@@ -219,13 +276,18 @@
 
 .education p {
 	font-size: 1.6em;
+	line-height:1.6;
 	color:#fff;
-	margin: 45px 0;
+	margin: 47px 0;
 }
 
 .education img {
 	float:left;
 	margin:0 25px;
+}
+
+.education a {
+	text-decoration: none;
 }
 
 .educ-item-1 {
@@ -243,7 +305,55 @@
 	animation:showEducItem 1s linear 2s forwards;
 }
 
+.overlay-education {
+	position: fixed;
+	margin: 0 auto;
+	background-color: #333;
+	transition: opacity 500ms;
+	visibility: hidden;
+	opacity: 0;
+	width: 100%;
+	height: 100vh;
+}
 
+.overlay-education:target {
+	visibility: visible;
+	opacity: 0.95;
+	z-index: 20;
+}
+
+.popup-education {
+	padding:20px;
+	background-color: #fff;
+	width: 60%;
+	left:10%;
+	margin-top:10%; 
+	position: absolute;
+	transition: all 3s ease-in-out;
+}
+
+.popup-education .close-education {
+	position: absolute;
+	top:20px;
+	right: 30px;
+	transition: all 200ms;
+	font-size: 3em;
+	font-weight: bold;
+	text-decoration: none;
+	color:#333;
+}
+
+.popup-education .close-education:hover {
+	color: #08FDD8;
+}
+
+.content-education {
+	padding: 25px 15px;
+}
+
+.content-education img {
+	width: 70%;
+}
 
 /* Style for PROJECT-PAGE*/
 #project-page {
@@ -254,7 +364,8 @@
 
 .project-title {
 	align-self: center;
-	text-align: center;
+	text-align: left;
+	padding-left: 30px;
 	width: 50%;
 }
 
