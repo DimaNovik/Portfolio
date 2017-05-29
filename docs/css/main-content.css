@@ -83,7 +83,7 @@
 	background-color: #fff;
 	width: 60%;
 	left:10%;
-	margin-top:5%; 
+	margin-top:10%; 
 	margin-bottom:5%; 
 	position: absolute;
 	transition: all 3s ease-in-out;
@@ -109,12 +109,12 @@
 }
 
 .content {
-	display: flex-wrap;
-	justify-content: space-around;
+	display: flex;
+	justify-content: space-between;
 } 
 
 .content-map img {
-	width: 80%;
+	width: 90%;
 }
 
 .content p {
