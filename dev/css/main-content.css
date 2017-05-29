@@ -113,8 +113,11 @@
 	justify-content: space-between;
 } 
 
+.content-text {
+	width: 50%;
+}
 .content-map img {
-	width: 90%;
+	width: 60%;
 }
 
 .content p {
