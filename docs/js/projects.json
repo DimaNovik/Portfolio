@@ -1,0 +1,11 @@
+let projects = [
+{
+	title: "project 1",
+	img: "img/map.png",
+	link: "vk.com",
+}, 
+{
+	title: "project 2",
+	img: "img/map.png",
+	link: "fb.com",
+},];

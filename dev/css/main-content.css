@@ -81,12 +81,11 @@
 .popup {
 	padding:20px;
 	background-color: #fff;
-	width: 60%;
-	left:10%;
-	margin-top:10%; 
-	margin-bottom:5%; 
+	width: 50%;
+	left:25%;
 	position: absolute;
 	transition: all 3s ease-in-out;
+	margin:20px auto;
 }
 
 .popup h2 {
@@ -328,11 +327,11 @@
 .popup-education {
 	padding:20px;
 	background-color: #fff;
-	width: 60%;
-	left:10%;
-	margin-top:10%; 
+	width: 50%;
+	left:25%;
 	position: absolute;
 	transition: all 3s ease-in-out;
+	margin:20px auto;
 }
 
 .popup-education .close-education {
@@ -355,7 +354,7 @@
 }
 
 .content-education img {
-	width: 70%;
+	width: 100%;
 }
 
 /* Style for PROJECT-PAGE*/
@@ -367,9 +366,9 @@
 
 .project-title {
 	align-self: center;
-	text-align: left;
+	text-align: center;
 	padding-left: 30px;
-	width: 50%;
+	padding-right: 55px;
 }
 
 .project-title h2 {
@@ -377,6 +376,24 @@
 	font-size: 6.5em;
 	color:#fff;
 }
+
+.project-list {
+	
+}
+
+.project-item {
+	float: left;
+	opacity: 0.8;
+}
+
+.project-item:hover {
+	opacity: 1;
+}
+
+.project-item img {
+	max-width: 250px;
+}
+
 
 /* Style for OTHER-PAGE*/
 #other-page {
