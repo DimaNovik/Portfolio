@@ -361,22 +361,12 @@
 #project-page {
 	display: none;
 	height: 100vh;
-}
-
-.project-title {
-	align-self: center;
-	text-align: center;
-	padding:0 40px;
-}
-
-.project-title h2 {
-	font-family: "Helvetica", sans-serif;
-	font-size: 6.5em;
-	color:#fff;
+	justify-content: space-around;
 }
 
 .project-list {
-
+	padding: 0;
+	margin: 0;
 }
 
 .project-item {
@@ -384,6 +374,7 @@
 	height: 250px;
 	overflow: hidden;
 	float: left;
+	align-content: flex-end;
 }
 
 .project-item img {
