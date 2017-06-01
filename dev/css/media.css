@@ -1,0 +1,76 @@
+@media only screen and (max-width:1366px) {
+	/*Style for SKILLS page*/
+	.about-skills h2{
+		font-size: 6.3em;
+	}
+}
+
+@media only screen and (max-width:1280px) {
+	/*Style for SKILLS page*/
+	.about-skills h2{
+		padding:0 10px 0 10px;
+		font-size: 5em;
+	
+	}
+}
+
+@media only screen and (max-width:1024px) {
+		/*Style for SKILLS page*/
+	.about-skills h2{
+		padding:0 10px 0 10px;
+		font-size: 4em;
+	}
+
+	.about-me {
+		padding: 0 5px;
+	}
+}
+
+@media only screen and (max-width:768px) {
+	/*Style for WELCOME page*/
+	.welcome {
+		padding-left: 10px;
+	}
+
+	.welcome h2{
+		font-size: 5em;
+	}
+	/*Style for SKILLS page*/
+
+	#skills-page {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-around;
+	}
+
+	.about-skills {
+		width: 100%;
+		padding: 10px 10px;
+		order:1;
+	}
+
+	.about-me {
+		width: 100%;
+		padding: 10px 10px;
+	}
+}
+
+@media only screen and (max-width:640px) {
+	/*Style for PROJECT page*/
+	.project-item {
+		width: 200px;
+		height: 150px;
+	}
+
+	.project-item img {
+		max-width: 200px;
+	}
+}
+
+@media only screen and (max-width:480px) {
+	
+}
+
+@media only screen and (max-width:320px) {
+	
+}
