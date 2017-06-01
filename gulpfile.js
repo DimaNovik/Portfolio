@@ -1,5 +1,7 @@
-var gulp = require('gulp');
-var plumber = require('gulp-plumber');
+var gulp = require('gulp'),
+    plumber = require('gulp-plumber'),
+    prefix = require('gulp-autoprefixer');
+
 
 // connect
 var connect = require('gulp-connect-multi')(); 
@@ -33,6 +35,7 @@ var copy = require('gulp-copy');
 
 gulp.task('copy', function () {
   gulp.src('./dev/css/*.*')
+    .pipe(prefix('last 2 versions', '> 1%', 'ie 9'))
     .pipe(gulp.dest('./site/css'))
     .pipe(gulp.dest('./docs/css'))
     .pipe(connect.reload());

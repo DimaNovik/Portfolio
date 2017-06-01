@@ -2,9 +2,16 @@
 	width: 80px;	
 	background-color: #181818;
 	text-align: center;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 }
 
 .logo {
@@ -43,6 +50,7 @@
 }
 
 .icon-menu ul li:hover {
+	-webkit-transition: 1s;
 	transition: 1s;
 	background-color: #08FDD8;
 	cursor: pointer;
@@ -57,6 +65,7 @@
 }
 
 .icon-social ul li:hover {
+	-webkit-transition: 1s;
 	transition: 1s;
 	background-color: #08FDD8;
 	cursor: pointer;
