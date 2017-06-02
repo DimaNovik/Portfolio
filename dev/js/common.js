@@ -13,3 +13,9 @@ function ChangePages(pages) {
 		}	
 	}
 }
+
+function showPop(id) {
+	console.log(id);
+	let viewId = id;
+	return viewId;
+}

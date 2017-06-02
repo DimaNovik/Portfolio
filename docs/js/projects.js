@@ -1,1 +1,0 @@
-let projects = [{name: 'name1', link: "link1"}, {name: 'name2', link: 'link2'}];

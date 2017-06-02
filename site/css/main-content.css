@@ -445,20 +445,76 @@
 	margin-top: 70px;
 }
 
-.view-circle::before {
-	content: "View project";
-	line-height: 7;
-	margin-left:10px;
-	font-size: 1.4em;
-	color:#444;
-	font-weight: bold;
-}
-
-
 .view-circle:hover {
 	opacity: 1;
 	-webkit-transition: 1s;
 	transition: 1s;
+}
+
+.view-circle a {
+	display: block;
+	height: 100px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 1.4em;
+	color:#444;
+	line-height: 100px;
+	font-weight: bold;
+}
+
+.overlay-projects {
+	position: fixed;
+	margin: 0 auto;
+	background-color: #333;
+	-webkit-transition: opacity 500ms;
+	transition: opacity 500ms;
+	visibility: hidden;
+	opacity: 0;
+	width: 100%;
+	height: 100vh;
+}
+
+.overlay-projects:target {
+	visibility: visible;
+	opacity: 0.95;
+	z-index: 20;
+}
+
+.popup-projects {
+	padding:20px;
+	background-color: #fff;
+	width: 50%;
+	left:25%;
+	position: absolute;
+	-webkit-transition: all 3s ease-in-out;
+	transition: all 3s ease-in-out;
+	margin:20px auto;
+}
+
+.popup-projects .close-projects {
+	position: absolute;
+	top:20px;
+	right: 30px;
+	-webkit-transition: all 200ms;
+	transition: all 200ms;
+	font-size: 3em;
+	font-weight: bold;
+	text-decoration: none;
+	color:#333;
+	display: block;
+	height: 100%;
+}
+
+.popup-projects .close-projects:hover {
+	color: #08FDD8;
+}
+
+.content-projects {
+	padding: 25px 15px;
+}
+
+.content-projects img {
+	width: 100%;
 }
 
 

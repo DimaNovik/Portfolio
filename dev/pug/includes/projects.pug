@@ -1,8 +1,39 @@
-.project-list
-	- var projects = [{title: 'Counter reading on tablet', link: "", img: "img/projects/guithub.png"},{title: 'Counter reading on tablet', link: "", img: "img/projects/portfolio.png"},{title: 'Counter reading on tablet', link: "", img: "img/projects/tablet.png"},{title: 'Counter reading on tablet', link: "", img: "img/projects/vokrugmira.png"},{title: 'Counter reading on tablet', link: "", img: "img/projects/realhome-mini.png"},{title: 'Counter reading on tablet', link: "", img: "img/projects/minjust.png"},{title: 'Counter reading on tablet', link: "", img: "img/projects/oblenergo.png"},{title: 'Counter reading on tablet', link: "", img: "img/projects/hazy.png"},{title: 'Counter reading on tablet', link: "", img: "img/projects/fastfood.png"},];
+mixin products(id, title, img)
+	.project-item
+		.view-circle
+			a(href='#popup-projects-'+id+'') View project
+		img(src=img)
+		p=title
 
-		each project in projects
-			.project-item
-				.view-circle-field
-					.view-circle
-					img(src=project.img)
+
+mixin products__overlay(id, title, img)
+	.overlay-projects(id= id)
+		.popup-projects
+			h2=title
+			a(class="close-projects" href="#") &times
+			.content-projects
+					p(align="center")
+					img(src=img)
+
+.project-list
+	+products(9, 'GuitHub. Project for musicians', 'img/projects/guithub.png')
+	+products(8, 'Novikdev.tk My personal portfolio', 'img/projects/portfolio.png')
+	+products(7, 'Counter reading on tablet', 'img/projects/tablet.png')
+	+products(6, 'Vokru-mira.com.ua', 'img/projects/vokrugmira.png')
+	+products(5, 'Adaptive layout of the test template', 'img/projects/realhome-mini.png')
+	+products(4, 'Site for Ministry of Justice Odessa Region ', 'img/projects/minjust.png')
+	+products(3, 'Site for OJSC "Odessaoblenergo"', 'img/projects/oblenergo.png')
+	+products(2, 'Adaptive layout of the test template"', 'img/projects/hazy.png')
+	+products(1, 'FastFood Game. First test project on React."', 'img/projects/fastfood.png')
+
+	+products__overlay('popup-projects-9', 'GuitHub. Project for musicians', 'img/projects/guithub.png')
+	+products__overlay('popup-projects-8', 'Novikdev.tk My personal portfolio', 'img/projects/portfolio.png')
+	+products__overlay('popup-projects-7', 'Counter reading on tablet', 'img/projects/tablet.png')
+	+products__overlay('popup-projects-6', 'Vokru-mira.com.ua', 'img/projects/vokrugmira.png')
+	+products__overlay('popup-projects-5', 'Adaptive layout of the test template', 'img/projects/realhome-mini.png')
+	+products__overlay('popup-projects-4', 'Site for Ministry of Justice Odessa Region ', 'img/projects/minjust.png')
+	+products__overlay('popup-projects-3', 'Site for OJSC "Odessaoblenergo"', 'img/projects/oblenergo.png')
+	+products__overlay('popup-projects-2', 'Adaptive layout of the test template"', 'img/projects/hazy.png')
+	+products__overlay('popup-projects-1', 'FastFood Game. First test project on React."', 'img/projects/fastfood.png')
+
+
